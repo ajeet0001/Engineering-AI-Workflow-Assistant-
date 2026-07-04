@@ -1,0 +1,128 @@
+TITLE: Preventive Maintenance Guide — Rotating Equipment
+CATEGORY: Maintenance
+VERSION: 3.1
+LAST UPDATED: 2024-02
+
+PURPOSE:
+Provide a comprehensive preventive maintenance schedule and corrective
+maintenance procedures for rotating equipment including pumps, compressors,
+motors, and gearboxes.
+
+SCOPE:
+All rotating equipment in production facilities rated above 5kW.
+
+1. MAINTENANCE INTERVALS
+
+Daily Checks:
+  - Verify lubrication oil levels (±10% of sight glass midpoint).
+  - Check for unusual vibration, noise, or heat.
+  - Inspect seal areas for leakage.
+  - Review temperature readings; alert if bearing temperature exceeds 80°C.
+  - Verify all guards are in place.
+
+Weekly Checks:
+  - Measure and record vibration levels (velocity, mm/s RMS).
+  - Alert threshold: >4.5 mm/s RMS (ISO 10816 Zone B/C boundary).
+  - Shutdown threshold: >7.1 mm/s RMS (ISO 10816 Zone D).
+  - Inspect flexible couplings for wear or cracking.
+  - Check alignment indicators if installed.
+
+Monthly Checks:
+  - Lubrication sample analysis for contamination and viscosity.
+  - Inspect impeller or rotor for erosion or cavitation damage.
+  - Check mechanical seals for wear.
+  - Verify motor insulation resistance (>1 MΩ is acceptable).
+
+Quarterly Checks:
+  - Full vibration spectrum analysis (FFT).
+  - Thermographic survey of motor and bearing housings.
+  - Alignment check using laser alignment tool.
+  - Replace air filters on motor enclosures.
+
+Annual Overhaul:
+  - Full disassembly and inspection.
+  - Replace all bearings regardless of condition (life-cycle replacement).
+  - Replace mechanical seals.
+  - Inspect shaft for wear, scoring, or fatigue cracking.
+  - Rebalance rotor to ISO G2.5 or better.
+  - Inspect casing for corrosion or erosion.
+
+2. COMMON FAILURE MODES AND CORRECTIVE ACTIONS
+
+Bearing Failure:
+  Symptoms: Elevated temperature, high vibration, noise (grinding/whining)
+  Causes:
+    - Overload
+    - Contaminated lubrication
+    - Improper installation (fretting)
+    - Fatigue
+  Corrective Actions:
+    - Replace bearing using proper tools (hydraulic press, not hammer).
+    - Investigate root cause before returning to service.
+    - Check lubrication system for contamination.
+    - Verify alignment and balance after replacement.
+
+Seal Failure:
+  Symptoms: Leakage at seal face, elevated process fluid in bearing housing
+  Causes:
+    - Dry running
+    - Thermal shock
+    - Excessive shaft deflection
+    - Incorrect seal face flush
+  Corrective Actions:
+    - Check seal flush plan and flush fluid quality.
+    - Verify shaft runout < 0.05mm TIR.
+    - Check for cavitation which causes axial shaft movement.
+    - Replace seal with correct specification for process fluid.
+
+Vibration — Unbalance:
+  Symptoms: 1x RPM dominant frequency in vibration spectrum
+  Corrective Action:
+    - Dynamic balance rotor in-situ or in workshop.
+    - Target ISO G1.0 for precision equipment, G2.5 for standard.
+    - Inspect for erosion or material buildup on rotor.
+
+Vibration — Misalignment:
+  Symptoms: 1x and 2x RPM frequencies, high axial vibration
+  Corrective Action:
+    - Perform laser alignment.
+    - Angular and parallel tolerance: <0.05mm/100mm and <0.1mm offset.
+    - Check for soft foot before alignment.
+    - Verify baseplate is grouted and not deteriorated.
+
+Cavitation:
+  Symptoms: Noise (like gravel in pump), pitting on impeller, vibration
+  Causes:
+    - Insufficient NPSHa (Net Positive Suction Head available)
+    - High suction lift, blocked suction strainer
+    - Operating far from BEP (Best Efficiency Point)
+  Corrective Actions:
+    - Clean suction strainer.
+    - Reduce flow or increase suction head.
+    - Reduce fluid temperature.
+    - Consider inducer or impeller change.
+
+3. LUBRICATION GUIDE
+
+Oil-lubricated bearings:
+  - Use ISO VG 68 for standard applications.
+  - Use ISO VG 100 for high-temperature (>80°C ambient) applications.
+  - Change interval: Every 2,000 hours or annually (whichever first).
+  - If contamination found, change immediately and investigate source.
+
+Grease-lubricated bearings:
+  - Use NLGI Grade 2 lithium complex grease.
+  - Re-grease interval: Every 500 hours for standard, every 250 hours for dirty environments.
+  - Do not over-grease: Excess grease causes heat buildup.
+
+4. VIBRATION SEVERITY CRITERIA (ISO 10816-3)
+  Zone A: <2.3 mm/s — New equipment, acceptable
+  Zone B: 2.3-4.5 mm/s — Alert, monitor closely
+  Zone C: 4.5-7.1 mm/s — Restricted operation, plan shutdown
+  Zone D: >7.1 mm/s — SHUT DOWN IMMEDIATELY
+
+REFERENCES:
+- ISO 10816 Mechanical Vibration
+- ISO 13709 Centrifugal Pumps
+- API 610 Centrifugal Pumps for Petroleum
+- ANSI/AGMA 9005 Industrial Gear Lubrication

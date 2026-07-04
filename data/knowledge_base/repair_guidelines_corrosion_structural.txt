@@ -1,0 +1,138 @@
+TITLE: Repair and Remediation Guidelines — Corrosion and Structural Defects
+CATEGORY: Repair Instructions
+VERSION: 1.5
+LAST UPDATED: 2024-02
+
+PURPOSE:
+Provide step-by-step repair procedures for common engineering defects including
+corrosion, fatigue cracking, weld defects, and structural deformation.
+
+SCOPE:
+Applicable to steel structures, pressure piping, mechanical components,
+and civil infrastructure elements.
+
+1. CORROSION ASSESSMENT AND REPAIR
+
+1.1 Corrosion Severity Classification
+  Class 1 (Surface/Cosmetic):
+    - Rust staining only, no measurable metal loss.
+    - Wall thickness within specification.
+    - Repair: Clean and re-coat. No structural concern.
+
+  Class 2 (Moderate):
+    - Metal loss 10-25% of nominal wall thickness.
+    - Localized pitting with depth <25% of wall.
+    - Repair: Remove affected material, apply compatible filler/patch, re-coat.
+
+  Class 3 (Severe):
+    - Metal loss >25% of nominal wall thickness.
+    - Through-pitting or localized corrosion threatening structural integrity.
+    - Repair: Section replacement required. No patching. Engineering sign-off mandatory.
+
+  Class 4 (Critical):
+    - Through-wall corrosion or imminent failure.
+    - Action: IMMEDIATE SHUTDOWN. Isolate system. Replace section. Full engineering review.
+
+1.2 Surface Preparation for Repair
+  - Blast clean to Sa 2.5 (ISO 8501-1) minimum for all corrosion repair areas.
+  - Apply primer coat within 4 hours of blast cleaning (before flash rust).
+  - Coating system selection per service environment (immersed, buried, atmospheric).
+
+1.3 Patch Repair Procedure (Class 2 only)
+  Prerequisites: Engineering approval required.
+  Step 1: Define repair limits — minimum 50mm beyond defect boundary.
+  Step 2: Remove all corroded material by grinding.
+  Step 3: NDT (UT) to verify sound metal at repair boundary.
+  Step 4: Apply weld overlay or insert patch plate.
+  Step 5: Post-weld heat treatment if required by material grade and thickness.
+  Step 6: NDT the completed repair (UT and MPI).
+  Step 7: Apply protective coating system.
+  Step 8: Document and update inspection register.
+
+2. FATIGUE CRACK REPAIR
+
+2.1 Crack Assessment
+  Before any repair:
+  - Determine crack extent using NDT (UT, MPI, or DPI).
+  - Map crack length, depth, and orientation.
+  - Assess proximity to stress concentration points.
+  - Engineering analysis required if crack length >50mm.
+
+2.2 Weld Repair Procedure
+  Step 1: Stop drill at crack tips (5mm hole diameter, centered on crack tip).
+  Step 2: Grind out crack to clean metal using a carbide burr — verify by DPI.
+  Step 3: Preheat per WPS (Weld Procedure Specification) for base material.
+  Step 4: Fill with qualified welder using approved WPS.
+  Step 5: Post-weld grind flush and profile smooth.
+  Step 6: Post-weld heat treatment per code (stress relief at 600-650°C for carbon steel).
+  Step 7: NDT repair area: MPI and UT required.
+  Step 8: Address root cause to prevent recurrence (redesign, load reduction, etc.).
+
+2.3 Fatigue Crack Root Causes
+  - Cyclic loading exceeding endurance limit.
+  - Stress concentration at geometry change (notch, hole, abrupt section change).
+  - Residual tensile stresses from welding.
+  - Surface damage initiating crack propagation.
+  Prevention:
+  - Shot peen repaired area to introduce compressive surface residual stress.
+  - Increase fillet radius at stress concentrations.
+  - Reduce cyclic load amplitude through vibration isolation or load redistribution.
+
+3. WELD DEFECT REPAIR
+
+Common Weld Defects and Repairs:
+  Porosity:
+    - Cause: Moisture contamination, shielding gas issues, base metal contamination.
+    - Repair: Grind out porous area, re-weld, re-inspect.
+    - Prevention: Preheat, use dry electrodes, clean base metal.
+
+  Incomplete Fusion:
+    - Cause: Insufficient heat input, incorrect technique, wrong electrode angle.
+    - Repair: Back-gouge to sound metal, re-weld.
+    - Detection: UT or RT required (not visible by MPI).
+
+  Cracks (Hot or Cold):
+    - Hot cracks: Solidification cracks in weld metal, often longitudinal.
+    - Cold cracks (HAZ): Hydrogen-induced, appear within 48 hours of welding.
+    - Repair: Remove crack completely (stop drill + grind), repair per Section 2.2.
+    - Prevention: Post-weld hydrogen bake-out (200°C for 4 hours) for susceptible materials.
+
+  Undercut:
+    - Cause: Excessive heat, high travel speed, incorrect electrode angle.
+    - Acceptable limit: 0.8mm depth for structural, 0.4mm for fatigue-loaded joints.
+    - Repair: Grind smooth if within limit; weld fill if exceeds limit.
+
+4. STRUCTURAL DEFORMATION REPAIR
+
+  Distortion Assessment:
+    - Measure deviation from design geometry.
+    - Tolerance: Typically L/500 for structural members (L = member length).
+    - Exceed tolerance: Engineering analysis required before repair.
+
+  Cold Straightening:
+    - Apply only when deformation is <2% strain.
+    - Use hydraulic jacks with controlled force.
+    - Monitor with dial gauges.
+    - Re-inspect welds in deformed area after straightening.
+
+  Hot Straightening:
+    - Heat to 600-650°C (cherry red) for carbon steel.
+    - Never exceed 750°C (risks grain growth and strength reduction).
+    - Allow to cool slowly; do not quench.
+    - Verify hardness and tensile properties after hot straightening.
+
+5. REPAIR DOCUMENTATION REQUIREMENTS
+  All repairs must include:
+  - Pre-repair NDT records showing defect extent.
+  - Repair procedure reference (approved WPS, repair drawing).
+  - Welder qualification records.
+  - Post-repair NDT records.
+  - Engineering sign-off.
+  - Updated inspection register entry with next inspection date.
+
+REFERENCES:
+- AWS D1.1 Structural Welding Code
+- ASME Section IX Welding and Brazing Qualifications
+- ISO 5817 Welding — Quality Levels for Imperfections
+- BS 7910 Fitness-for-Service Assessment
+- NACE MR0175 Corrosion Control

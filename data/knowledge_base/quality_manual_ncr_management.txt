@@ -1,0 +1,124 @@
+TITLE: Quality Manual — Engineering Inspection and Non-Conformance Management
+CATEGORY: Quality Management
+VERSION: 2.0
+LAST UPDATED: 2024-01
+
+PURPOSE:
+Establish the quality management framework for engineering inspections,
+including non-conformance reporting, root cause analysis, and corrective
+and preventive action (CAPA) processes.
+
+SCOPE:
+All engineering activities subject to quality control including design,
+manufacturing, inspection, testing, and maintenance.
+
+1. QUALITY INSPECTION FRAMEWORK
+
+1.1 Inspection Types
+  First Article Inspection (FAI):
+    - Performed on first component from a new production run.
+    - Verifies all dimensions, materials, and processes meet specification.
+    - Required documentation: Balloon drawing, measurement report, material certs.
+
+  In-Process Inspection (IPI):
+    - Performed at defined hold points during manufacturing.
+    - Inspector must sign off before work proceeds past hold point.
+    - Non-conformance found at IPI: STOP work, issue NCR immediately.
+
+  Final Inspection (FI):
+    - 100% inspection for critical components.
+    - Statistical sampling (AQL 1.0) for standard components per ANSI/ASQ Z1.4.
+    - All FI records retained for minimum 10 years.
+
+1.2 Calibration Requirements
+  - All inspection instruments must have current calibration (≤12 months).
+  - Calibrated instruments must display valid calibration sticker.
+  - If uncalibrated instrument used: quarantine all products inspected, issue NCR.
+  - Calibration laboratory must be ISO/IEC 17025 accredited.
+
+2. NON-CONFORMANCE REPORTING (NCR)
+
+2.1 Triggering Events
+  Issue an NCR immediately when:
+  - Any measured parameter falls outside the specified tolerance.
+  - Material certificate is missing, expired, or does not match specification.
+  - Process deviates from approved procedure without prior authorization.
+  - A test failure occurs during qualification or production testing.
+  - Customer complaint is received relating to product quality.
+
+2.2 NCR Content Requirements
+  Every NCR must document:
+  - NCR number (auto-generated, sequential)
+  - Date and time of discovery
+  - Product/component identification (part number, serial number, batch)
+  - Description of non-conformance (specific, measurable)
+  - Quantity affected
+  - Disposition: Use-As-Is / Rework / Scrap / Return to Supplier
+  - Immediate containment action taken
+  - Inspector name and signature
+
+2.3 NCR Disposition Authority
+  - Use-As-Is: Requires Engineering Manager sign-off AND customer concession if shipped.
+  - Rework: Engineering must approve rework procedure. Re-inspect to original requirements.
+  - Scrap: Document and physically mark/destroy scrap. Record lot traceability.
+  - Return to Supplier: Issue Supplier Corrective Action Request (SCAR).
+
+3. ROOT CAUSE ANALYSIS (RCA)
+
+3.1 RCA Methodology
+  For all NCRs with severity of MAJOR or CRITICAL, complete a formal RCA within 5 business days.
+
+  Recommended Methods:
+    5-Why Analysis:
+      - Ask "Why?" at least 5 times to drill to the root cause.
+      - Example: Bearing failed → Why? Overheating → Why? Insufficient lubrication →
+        Why? Wrong lubricant specified → Why? Procedure not updated after equipment change →
+        Why? Change management process not followed. ROOT CAUSE: Change management gap.
+
+    Fishbone (Ishikawa) Diagram:
+      - Categorize causes: Man, Machine, Material, Method, Environment, Measurement.
+      - Use for complex failures with multiple contributing factors.
+
+    Fault Tree Analysis (FTA):
+      - Use for safety-critical failures to map all possible failure paths.
+
+3.2 RCA Documentation
+  - Complete 8D report for all customer-facing NCRs.
+  - D1: Team formation
+  - D2: Problem description
+  - D3: Immediate containment
+  - D4: Root cause identification
+  - D5: Corrective actions selected
+  - D6: Corrective actions implemented and verified
+  - D7: Preventive actions to avoid recurrence
+  - D8: Team recognition and report closure
+
+4. CORRECTIVE AND PREVENTIVE ACTION (CAPA)
+
+4.1 Corrective Action
+  - Must address the ROOT CAUSE, not just the symptom.
+  - Assign responsible person and target completion date.
+  - Verify effectiveness within 30-90 days of implementation.
+  - Update procedures, work instructions, or control plans as required.
+
+4.2 Preventive Action
+  - Review similar processes, products, and components for same potential.
+  - Update FMEA (Failure Mode and Effects Analysis) with new failure mode.
+  - Add inspection point to production control plan if risk is ongoing.
+  - Share lesson learned across applicable sites.
+
+5. QUALITY METRICS
+
+Key Performance Indicators:
+  - NCR Rate: Target <1 NCR per 1,000 inspection events.
+  - RCA Completion: 100% of major NCRs within 5 business days.
+  - CAPA Effectiveness: >90% of CAPAs verified effective at first review.
+  - First Pass Yield (FPY): Target >98% for all production processes.
+  - Customer Escape Rate: Target 0 (zero tolerance for customer-affecting quality escapes).
+
+REFERENCES:
+- ISO 9001:2015 Quality Management Systems
+- ANSI/ASQ Z1.4 Sampling Procedures
+- AS9100 Rev D (Aerospace Quality Management)
+- AIAG FMEA Manual 4th Edition
+- ISO/IEC 17025 Testing and Calibration Laboratories

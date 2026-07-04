@@ -1,0 +1,63 @@
+TITLE: Standard Operating Procedure — Structural Inspection SOP-ENG-001
+CATEGORY: Inspection & Testing
+VERSION: 2.3
+LAST UPDATED: 2024-01
+
+PURPOSE:
+This SOP defines the standard procedure for conducting structural integrity inspections
+on mechanical components, pressure vessels, and civil infrastructure.
+
+SCOPE:
+Applies to all engineering inspection activities performed in manufacturing plants,
+field sites, and maintenance facilities.
+
+PRE-INSPECTION REQUIREMENTS:
+1. Verify all personnel have completed relevant safety training (OSHA 10 or equivalent).
+2. Ensure calibration certificates for all inspection instruments are current (within 12 months).
+3. Obtain written work permit for confined spaces or elevated work areas.
+4. Establish an exclusion zone around inspection area per safety guidelines.
+5. Review the previous inspection report and any outstanding NCRs (Non-Conformance Reports).
+
+INSPECTION PROCEDURE:
+Step 1 — Visual Inspection
+  - Examine all accessible surfaces for cracks, corrosion, deformation, or discoloration.
+  - Document defects with photographs and GPS coordinates where applicable.
+  - Use illuminated magnifier for surface crack detection on welds.
+
+Step 2 — Non-Destructive Testing (NDT)
+  - Ultrasonic Testing (UT): Apply to detect sub-surface cracks and wall thickness measurement.
+  - Magnetic Particle Inspection (MPI): Apply to ferromagnetic materials for surface/near-surface flaws.
+  - Dye Penetrant Inspection (DPI): Apply to non-magnetic materials for surface defects.
+  - Radiographic Testing (RT): Apply only when other methods are inconclusive.
+
+Step 3 — Measurement and Documentation
+  - Record all dimensional measurements against design tolerances.
+  - Note any deformation exceeding 0.5% of nominal dimension as a CRITICAL finding.
+  - Document corrosion depth; alert if wall thickness is below 80% of minimum design thickness.
+
+Step 4 — Load Testing (where applicable)
+  - Apply proof load at 110% of design working load.
+  - Hold for minimum 30 minutes.
+  - Monitor for deflection, noise, or instability.
+
+ACCEPTANCE CRITERIA:
+- No cracks exceeding 2mm in length in load-bearing components.
+- Corrosion pitting depth must not exceed 10% of wall thickness.
+- Deflection under proof load must not exceed L/300 (where L = span length).
+- No evidence of fatigue cracking at stress concentration points.
+
+REJECTION CRITERIA (IMMEDIATE SHUTDOWN):
+- Any through-crack discovered in pressure-containing components.
+- Wall thickness below 70% of minimum design value.
+- Weld failure under proof load.
+- Evidence of hydrogen embrittlement or stress corrosion cracking.
+
+POST-INSPECTION:
+- Submit completed inspection report within 48 hours.
+- Issue NCR for any finding exceeding acceptance criteria.
+- Schedule re-inspection interval based on findings (3 months if CRITICAL, 12 months if PASS).
+
+REFERENCES:
+- ASME B31.3 Process Piping Standard
+- AWS D1.1 Structural Welding Code
+- ISO 9712 Non-Destructive Testing Personnel Qualification

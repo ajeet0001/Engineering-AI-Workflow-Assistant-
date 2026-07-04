@@ -1,0 +1,81 @@
+TITLE: Engineering Testing Guidelines — Mechanical Component Qualification
+CATEGORY: Testing Standards
+VERSION: 1.8
+LAST UPDATED: 2024-03
+
+PURPOSE:
+Define the testing protocols and acceptance criteria for qualifying mechanical
+components before integration into production systems.
+
+SCOPE:
+Covers fatigue testing, tensile testing, hardness testing, and environmental
+stress testing for all mechanical components used in critical applications.
+
+1. TENSILE TESTING
+Protocol:
+  - Sample preparation per ASTM E8/E8M.
+  - Test at ambient temperature (23°C ± 5°C) unless otherwise specified.
+  - Load application rate: 1-10 mm/min crosshead speed.
+  - Record: Yield strength, Ultimate Tensile Strength (UTS), elongation at break.
+
+Acceptance Criteria:
+  - Yield strength: Must meet or exceed minimum design value per material specification.
+  - UTS must be at least 1.25x the yield strength (minimum ductility requirement).
+  - Elongation at break: Minimum 12% for structural steels, 8% for high-strength alloys.
+
+Failure Indicators:
+  - Brittle fracture mode (no necking, angular fracture surface) — indicates hydrogen
+    embrittlement or heat treatment defects. Reject entire batch, quarantine material.
+  - Yield strength below specification — possible incorrect material or heat treatment.
+  - Premature failure (below 80% of expected UTS) — inspect for pre-existing defects.
+
+2. FATIGUE TESTING
+Protocol:
+  - Test per ASTM E466 (constant amplitude axial fatigue).
+  - Apply cyclic loading at 70% and 50% of UTS until failure or 10^7 cycles.
+  - Record S-N curve data.
+  - Test minimum 5 specimens per load level.
+
+Acceptance Criteria:
+  - Endurance limit must exceed 40% of UTS for steels.
+  - No fatigue failure before 10^6 cycles at 50% UTS load.
+
+Root Cause of Fatigue Failures:
+  - Surface defects (scratches, pits) — reduce fatigue life by 30-50%.
+  - Residual tensile stresses — from machining or welding without stress relief.
+  - Sharp stress concentrations — fillets with radius < 0.5mm are high-risk zones.
+  - Corrective action: Shot peening, surface finishing, fillet radius increase.
+
+3. HARDNESS TESTING
+Protocol:
+  - Rockwell, Vickers, or Brinell per ASTM E18, E384, or E10.
+  - Minimum 5 measurements per component; average reported.
+
+Acceptance Criteria:
+  - Hardness must fall within ±10% of specified value.
+  - No single measurement may deviate >15% from specification.
+  - High hardness (>350 HV) with low toughness indicates risk of brittle fracture.
+
+4. ENVIRONMENTAL STRESS TESTING
+Salt Spray (Corrosion) Test:
+  - Per ASTM B117: 500 hours minimum for outdoor-rated components.
+  - Acceptance: No base metal corrosion, no coating delamination >5mm from scribe line.
+
+Thermal Cycling:
+  - Range: -40°C to +120°C (or per application specification).
+  - 50 cycles minimum; inspect for cracking, delamination, or dimensional change.
+
+5. FAILURE ANALYSIS PROCEDURE
+When a component fails testing:
+  Step 1: Quarantine all components from the same production batch.
+  Step 2: Perform fractographic analysis to determine failure mode.
+  Step 3: Review material certifications (Mill Test Reports).
+  Step 4: Check manufacturing process parameters (heat treatment, machining).
+  Step 5: Issue Non-Conformance Report (NCR) and notify supply chain.
+  Step 6: Determine if design modification is required.
+
+REFERENCES:
+- ASTM E8/E8M Tensile Testing of Metallic Materials
+- ASTM E466 Fatigue Testing
+- ISO 6892-1 Metallic Materials Tensile Testing
+- ASTM B117 Salt Spray Testing

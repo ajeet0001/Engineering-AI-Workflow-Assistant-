@@ -1,0 +1,135 @@
+TITLE: Electrical Systems Inspection and Safety Guidelines
+CATEGORY: Electrical Engineering
+VERSION: 2.2
+LAST UPDATED: 2024-03
+
+PURPOSE:
+Define inspection, testing, and safety procedures for electrical systems
+including power distribution, motors, control panels, and instrumentation.
+
+SCOPE:
+All electrical installations rated up to 33kV in industrial facilities.
+
+1. ELECTRICAL INSPECTION STANDARDS
+
+Pre-Inspection Safety Requirements:
+  - Follow Lockout/Tagout (LOTO) per OSHA 29 CFR 1910.147.
+  - Verify circuit is de-energized using calibrated voltage tester.
+  - Establish arc flash exclusion boundary per NFPA 70E.
+  - Wear appropriate PPE: arc flash suit, gloves, face shield (rated for incident energy).
+  - Never work on live equipment without hot work permit and second person.
+
+1.1 Visual Inspection
+  - Check for overheating evidence: discoloration, melted insulation, burn marks.
+  - Inspect cable insulation for cracking, abrasion, or moisture damage.
+  - Verify all conduit entries are sealed (prevent pest ingress and moisture).
+  - Check terminal connections for corrosion or looseness.
+  - Verify cable support and tray integrity.
+  - Inspect switchgear for dust accumulation (fire and flashover risk).
+
+1.2 Thermographic Survey
+  - Conduct under normal load conditions (minimum 40% rated load).
+  - Temperature classification:
+    - ΔT < 5°C above ambient: NORMAL — monitor.
+    - ΔT 5-15°C above ambient: INVESTIGATE — schedule repair.
+    - ΔT 15-40°C above ambient: ABNORMAL — repair at next scheduled outage.
+    - ΔT > 40°C above ambient: CRITICAL — repair IMMEDIATELY. De-energize if possible.
+  - Common hotspots: loose connections, overloaded conductors, failing components.
+
+2. MOTOR TESTING
+
+2.1 Insulation Resistance Testing
+  - Use 500V DC Megger for motors <1kV, 1000V DC for motors 1-6.6kV.
+  - Acceptance criteria: >1 MΩ (minimum), >100 MΩ recommended for reliable operation.
+  - Temperature correct to 40°C baseline using: R40 = Rtest × 0.5^((Ttest-40)/10)
+  - If <1 MΩ: Motor must not be energized. Investigate cause (moisture, contamination, insulation breakdown).
+
+2.2 Polarization Index (PI)
+  - PI = (10-minute reading) / (1-minute reading)
+  - PI > 4: Excellent insulation
+  - PI 2-4: Good
+  - PI < 2: Insulation is suspect, further investigation required
+  - PI < 1: DO NOT ENERGIZE. Insulation failure imminent.
+
+2.3 Motor Current Analysis
+  - Measure all three phase currents under full load.
+  - Phase current imbalance > 2%: Investigate power supply and connections.
+  - Phase current imbalance > 5%: Significant problem, reduce load, investigate.
+  - Overall current significantly above nameplate: Overloaded, investigate mechanical load.
+
+3. TRANSFORMER INSPECTION
+
+3.1 Oil-Filled Transformers
+  - Check oil level in conservator tank.
+  - Sample oil annually for dissolved gas analysis (DGA).
+  - DGA key gases (IEEE C57.104 guidelines):
+    - Hydrogen (H2): Partial discharge or arcing.
+    - Acetylene (C2H2): Arcing — very serious, indicates internal arc.
+    - Methane/Ethane: Thermal faults, overheating.
+    - Carbon monoxide/dioxide: Paper insulation degradation.
+  - Action levels: Refer to IEEE C57.104 Table 1 for gas concentration limits.
+
+3.2 Dry-Type Transformers
+  - Check for dust/contamination on windings (fire risk).
+  - Inspect for overheating indicators on windings.
+  - Verify ventilation openings are clear.
+  - Thermal imaging of connections and windings under load.
+
+4. PROTECTION RELAY TESTING
+
+  Overcurrent Protection:
+    - Test pick-up current setting: Must operate within ±5% of setpoint.
+    - Test time-current characteristic at 200% and 500% of pick-up.
+    - Verify instantaneous element operates at set pick-up level.
+    - Test reset time.
+
+  Differential Protection:
+    - Verify CT ratios and connections.
+    - Test restraint and operate characteristics.
+    - Apply through-fault current and verify relay restrains.
+    - Apply internal fault current and verify relay operates.
+
+  Earth Fault Protection:
+    - Verify residual current circuit is complete.
+    - Test earth fault relay pick-up and operating time.
+
+5. COMMON ELECTRICAL FAILURES AND CAUSES
+
+Connection Overheating:
+  Cause: Loose connection, corrosion, or inadequate torque.
+  Corrective Action: Clean, torque to specification, re-thermograph.
+  Prevention: Apply calibrated torque wrench, use anti-oxidant compound on aluminum.
+
+Insulation Failure:
+  Cause: Age, thermal stress, mechanical damage, moisture ingress, overvoltage.
+  Corrective Action: Identify and remove source of degradation. Rewind or replace motor.
+  Prevention: Regular Megger testing, maintain dry environment, protect from mechanical damage.
+
+Phase Imbalance:
+  Cause: Unbalanced load distribution, loose or corroded connection, blown fuse.
+  Corrective Action: Balance loads, repair connections, replace fuse.
+  Effect: Increases motor heating by (% imbalance)^2 × 2%. Can cause premature failure.
+
+Harmonic Distortion:
+  Cause: Variable frequency drives (VFDs), non-linear loads.
+  Effects: Overheating of neutral conductors, transformers, and capacitors.
+  Mitigation: Install harmonic filters, use K-rated transformers, properly size neutrals.
+
+6. CABLE TESTING
+
+  High Potential (Hi-Pot) Test:
+    - DC Hi-Pot: Apply 80% of factory test voltage for acceptance.
+    - For XLPE cables: Follow IEC 60502 for test voltage and duration.
+    - Monitor leakage current — rising current indicates insulation degradation.
+    - Never apply excessive voltage: Can damage healthy cables.
+
+  Time Domain Reflectometry (TDR):
+    - Locate cable faults (open, short, impedance change) precisely.
+    - Provides distance to fault in meters.
+
+REFERENCES:
+- NFPA 70E Arc Flash Safety
+- IEEE C57.104 Dissolved Gas Analysis
+- IEC 60502 Power Cables
+- OSHA 29 CFR 1910.147 Lockout/Tagout
+- NETA MTS Maintenance Testing Specifications

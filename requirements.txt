@@ -1,0 +1,25 @@
+# Core LangChain ecosystem
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+langchain-text-splitters>=0.3.0
+langchain-huggingface>=0.1.0
+langchain-google-genai>=2.0.0
+langgraph>=0.2.0
+
+# PDF Processing
+PyMuPDF>=1.24.0
+
+# RAG components
+sentence-transformers>=3.0.0
+faiss-cpu>=1.8.0
+
+# Utilities
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+tqdm>=4.66.0
+pathlib2>=2.3.7
+
+# Output formatting
+rich>=13.0.0
